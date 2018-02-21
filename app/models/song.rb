@@ -15,4 +15,6 @@ class Song < ActiveRecord::Base
     ids.each do |id|
       self.genres << Genre.find(id)
     end
+  end
+  
 end
