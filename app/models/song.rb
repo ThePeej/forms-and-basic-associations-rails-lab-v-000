@@ -16,5 +16,5 @@ class Song < ActiveRecord::Base
       self.genres << Genre.find(id)
     end
   end
-  
+
 end
