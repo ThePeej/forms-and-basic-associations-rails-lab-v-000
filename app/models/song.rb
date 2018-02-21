@@ -7,9 +7,9 @@ class Song < ActiveRecord::Base
     self.artist = Artist.find_or_create_by(name: artist)
   end
 
-  def song_artist_name
-    self.artist.name
-  end
+  # def song_artist_name
+  #   self.artist.name
+  # end
 
   def song_genre_ids=(ids)
     ids.each do |id|
